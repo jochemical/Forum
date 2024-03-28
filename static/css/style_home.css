@@ -1,0 +1,175 @@
+/* General style for root */
+html {
+  font-family: "Courier new", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Select all elements to adjust default box sizing */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #11609d;
+  background-color: #786e56;
+}
+
+header {
+  background-color: rgb(233, 248, 247);
+}
+
+h2 {
+  font-family: "Courier new";
+  font-size: 30px;
+  color: #daeff9;
+  font-weight: normal;
+}
+
+.navbar {
+  margin: 50px auto;
+  padding: 0 20px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo {
+  margin-right: 30px;
+  width: 150px 
+}
+
+.navbar__navigation {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+  color: #5c6b70;
+}
+
+.navbar__navigation-item {
+  margin-left: 50px;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.form__input {
+  width: 100%;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form__textarea {
+  width: inherit;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #f3f6f6;
+  margin-bottom: 2px;
+  resize: none;
+}
+
+.form__submit {
+  background-color: #34353a;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 30px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.form__submit:hover {
+  background-color: #d1cfa0;
+}
+
+.entry {
+  margin-top: 50px;
+}
+
+.entry__title {
+  display: inline;
+  font-size: 18px;
+}
+
+.entry__date {
+  color: #393f41;
+}
+
+.entry__content {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.footer {
+  background-color: #b4b3b7;
+  padding: 40px 0;
+  margin-top: 50px;
+  border-top: 4px solid black;
+  color: white;
+  font-size: 12px;
+}
+
+.footer__content {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .left {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .right {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.footer__item {
+  margin-bottom: 5px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__item:hover {
+  text-decoration: underline;
+}
